@@ -1,0 +1,29 @@
+{
+  "name": "mobile_push",
+  "version": "1.0.0",
+  "description": "Pushes things I want to see to my phone",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "npm run tsc && node build/index.js",
+    "zip": "npm run tsc && cd build && bestzip ../lambda.zip * ../node_modules ../package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vincent Petrone",
+  "license": "ISC",
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.0.14",
+    "@types/request": "^2.48.5",
+    "@types/request-promise": "^4.1.46",
+    "koa": "^2.13.0",
+    "moment": "^2.27.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.5"
+  }
+}
